@@ -14,7 +14,7 @@
 
 
 
-助教团队：
+### 助教团队
 
 - 张义，2332309318@qq.com
 - 杨韵倩，...
@@ -22,6 +22,8 @@
 
 
 
-资源：
+### 资源
 
--  [教材&实验指导书勘误(2025.01).xlsx](assets\教材&实验指导书勘误(2025.01).xlsx) 
+-  [教材&实验指导书勘误(2025.01).xlsx](./assets/教材&实验指导书勘误(2025.01).xlsx)
+-  [Dev-C++](./assets/devcpp-5.1.1.0_64bit_setup.exe)
+-  [RedPanda(美化后的Dev-C++)](./assets/RedPanda.C++.3.2.win64.MinGW64_11.4.Setup.exe)
