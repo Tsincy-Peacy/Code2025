@@ -2,6 +2,10 @@ site_name: Code2025
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+  language: zh
 
 nav:
   - Home: index.md
+  - Lab0: lab0.md

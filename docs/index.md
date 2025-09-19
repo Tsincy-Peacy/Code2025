@@ -24,6 +24,6 @@
 
 ### 资源
 
--  [教材&实验指导书勘误(2025.01).xlsx](./assets/教材&实验指导书勘误(2025.01).xlsx)
--  [Dev-C++](./assets/devcpp-5.1.1.0_64bit_setup.exe)
--  [RedPanda(美化后的Dev-C++)](./assets/RedPanda.C++.3.2.win64.MinGW64_11.4.Setup.exe)
+- [教材&实验指导书勘误(2025.01).xlsx](./assets/教材&实验指导书勘误(2025.01).xlsx)
+- [Dev-C++](./assets/devcpp-5.1.1.0_64bit_setup.exe)
+- [RedPanda](./assets/RedPanda.C++.3.2.win64.MinGW64_11.4.Setup.exe)
