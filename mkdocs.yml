@@ -1,0 +1,7 @@
+site_name: Code2025
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
