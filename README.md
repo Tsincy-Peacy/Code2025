@@ -36,7 +36,7 @@ mkdocs serve  # 开发状态
 
 页面设置在mkdocs.yml，详细介绍查看 MkDocs 或 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 官网。
 
-页面 Markdown 源码在 index.md 和 docs/*.md 中。
+页面 Markdown 源码在 docs 中。
 
 
 
