@@ -17,7 +17,7 @@
 ### 助教团队
 
 - 张义，2332309318@qq.com
-- 杨韵倩，...
+- 杨韵倩，yyq@mail.ustc.edu.cn
 - 何熙然，hxr2510@mail.ustc.edu.cn
 
 
