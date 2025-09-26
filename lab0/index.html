@@ -1,0 +1,783 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Lab0 - Code2025</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#0" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Code2025" class="md-header__button md-logo" aria-label="Code2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Code2025
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab0
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lab0
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Code2025" class="md-nav__button md-logo" aria-label="Code2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Code2025
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lab0
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab0
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、机房编程软件介绍(Dev-C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、个人电脑编程环境配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、个人电脑编程环境配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. GCC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dev-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Dev-C++
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-redpanda" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. RedPanda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux(Ubuntu)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux(Ubuntu)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCC
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、(选做) 号称史上最全面的开发工具：VSCode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、实验环境测试
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev-c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、以 Dev-C++ 为例，学习调试程序
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、机房编程软件介绍(Dev-C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、个人电脑编程环境配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、个人电脑编程环境配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. GCC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dev-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Dev-C++
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-redpanda" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. RedPanda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux(Ubuntu)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux(Ubuntu)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCC
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、(选做) 号称史上最全面的开发工具：VSCode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、实验环境测试
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev-c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、以 Dev-C++ 为例，学习调试程序
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="0"><strong>实验 0：上机环境准备</strong></h1>
+<p>提示：你当然可以选择在机房电脑已有环境使用编译软件，但我们更推荐在自己电脑配置环境。</p>
+<h2 id="dev-c"><strong>一、机房编程软件介绍(Dev-C++)</strong></h2>
+<p>机房电脑已有的编程软件是 Dev-C++，这个软件我们将在下面介绍。</p>
+<ul>
+<li>优点：开箱即用</li>
+<li>缺点：操作不便，提前写好的文件上传繁琐，界面原始</li>
+</ul>
+<h2 id="_1"><strong>二、个人电脑编程环境配置</strong></h2>
+<p>这里我们将分别介绍 Windows 系统和 Linux 系统下常用的 C/C++ 编程软件，大家可以自行选择。当然如果你之前已经有一定的编程基础和熟练使用的软件，不妨继续使用~</p>
+<h3 id="windows"><strong>Windows</strong></h3>
+<ul>
+<li>优点：大部分同学计算机入门都用 Windows</li>
+<li>缺点：没有便捷的包管理器，操作繁琐</li>
+</ul>
+<h4 id="1-gcc"><strong>1. <a href="../assets/x86_64-15.2.0-release-mcf-seh-ucrt-rt_v13-rev0.7z">GCC</a></strong></h4>
+<p>下载好压缩包后，解压至你指定的目录，如：<code>C:\Dev</code> 或 <code>D:\App</code> 等，如果你缺少便捷无广的解压工具，点击这里<a href="../assets/7z2409-x64.exe">下载</a>。然后将 <code>path\to\mingw64\bin</code> 加入到环境变量，例如：<code>C:\Dev\mingw64\bin</code>。</p>
+<ul>
+<li>Win + R，输入 sysdm.cpl，确定；</li>
+</ul>
+<p><img alt="image-20250922221457141" src="../img/image-20250922221457141.png" /></p>
+<ul>
+<li>选择“高级”，点击“环境变量”；</li>
+</ul>
+<p><img alt="image-20250922221627181" src="../img/image-20250922221627181.png" /></p>
+<ul>
+<li>双击“Path”；(你可以任意选择用户变量或系统变量中的 Path，当计算机的用户只有一个时，这二者是等效的)</li>
+</ul>
+<p><img alt="image-20250922221913587" src="../img/image-20250922221913587.png" /></p>
+<ul>
+<li>新建路径，确定；(请修改为你的实际路径，另外注意 Windows 的反斜杠 \)</li>
+</ul>
+<p><img alt="image-20250922222230187" src="../img/image-20250922222230187.png" /></p>
+<ul>
+<li>Win + R，输入 cmd 打开命令行，输入 gcc，若显示：</li>
+</ul>
+<p><img alt="image-20250922222442343" src="../img/image-20250922222442343.png" /></p>
+<p>配置成功。</p>
+<p>使用方式：</p>
+<pre><code class="language-cmd">gcc input_file.c -o output_file.exe
+output_file.exe  # 执行程序
+</code></pre>
+<h4 id="2-dev-c"><strong>2. <a href="../assets/devcpp-5.1.1.0_64bit_setup.exe">Dev-C++</a></strong></h4>
+<p>注意：本版本实测会发生程序崩溃现象，请移步下方 RedPanda。</p>
+<p>安装即可，可以按照自己的需求更改安装位置，如：<code>C:/Dev</code> 或 <code>D:/App</code> 等。</p>
+<h4 id="3-redpanda"><strong>3. <a href="../assets/RedPanda.C%2B%2B.3.2.win64.MinGW64_11.4.Setup.exe">RedPanda</a></strong></h4>
+<p>界面优雅，与 Dev-C++ 操作基本一致，安装同 Dev-C++。</p>
+<h3 id="linuxubuntu"><strong>Linux(Ubuntu)</strong></h3>
+<p>Linux 也是一个广泛使用的操作系统，但大部分电脑预装的操作系统是 Windows 系统。如果希望在自己的电脑上使用 Linux 操作系统，一般有两种方法：一是安装双系统，但风险较高；二是使用一种叫做虚拟机的软件。</p>
+<p>我们推荐并为大家准备的是第二种解决方案，即使用虚拟机来安装使用 Linux 操作系统。这部分内容较多，有兴趣的同学可以点击链接 <a href="../assets/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.pdf">Linux 基础与环境配置</a> 查看学习。</p>
+<ul>
+<li>优点：完全开源，社区支持</li>
+<li>缺点：新手不友好</li>
+</ul>
+<h4 id="gcc"><strong>GCC</strong></h4>
+<p>在 Linux 上安装 GCC 的指令如下：</p>
+<pre><code class="language-cmd">sudo apt install build-essential  # gcc 包含在 build-essential 中
+</code></pre>
+<p>使用方式：</p>
+<pre><code class="language-cmd">gcc input_file.c -o output_file  # 这里不需要.exe
+output_file  # 执行程序
+</code></pre>
+<h2 id="vscode"><strong>三、(选做) 号称史上最全面的开发工具：VSCode</strong></h2>
+<p>VSCode 是一个强大的文本编辑器，以“轻量级、高性能、强扩展”为核心特色，是前端、后端、全栈及数据科学等领域开发者的首选工具。</p>
+<p>完成 VSCode 的安装配置以及可以成功地在 VSCode 上编写 C 语言代码并不是一件容易的事（助教的许多同学存在因为配置不当只能裸眼 debug 一学期的情况，当然这也不失为一种提升编程能力的好办法）。</p>
+<p>这里我们推荐一篇博客，它详细介绍了针对 C/C++ 的 VSCode 安装及环境配置的过程。阅读前提示：本博客的第三部分内容与上文中 GCC 环境配置等效，如已安装则无需重复。</p>
+<p><a href="https://blog.csdn.net/qq_42417071/article/details/137438374">VS Code 配置 C/C++ 编程运行环境（保姆级教程）_vscode配置c++环境-CSDN博客</a>。</p>
+<h2 id="_2"><strong>四、实验环境测试</strong></h2>
+<p>本节测试以 Dev-C++ 为例，讲解如何在 Dev-C++ 上编译和运行程序。</p>
+<p>（1）打开 Dev-C++ ，创建 <code>.c</code> 文件；</p>
+<p><img alt="lab0-6" src="../img/lab0-6.png" /></p>
+<p>（2）将下面的代码复制粘贴到文件中，点击如下图中的按钮，编译并运行程序；</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main(void) {
+    printf(&quot;Hello, world!\n&quot;);
+    getchar(); // 如果不添加这一行有可能出现终端（小黑窗）闪现的问题
+    return 0;
+}
+</code></pre>
+<p><img alt="lab0-7" src="../img/lab0-7.png" /></p>
+<p>（3）如果在终端（小黑窗）输出 Hello, world!，那么恭喜，你的环境配置成功。</p>
+<p><img alt="lab0-7" src="../img/lab0-8.png" /></p>
+<h2 id="dev-c_1"><strong>五、以 Dev-C++ 为例，学习调试程序</strong></h2>
+<p>调试程序，就是控制程序逐行执行，从而看到每个变量的具体变化情况，以及函数的调用过程。对于初学者或是编写一些较短的程序而言，这是很值得学习和使用的方法。</p>
+<p>本节我们以一段完整的 C 语言程序为例，系统地学一下如何用 Dev-C++ 调试程序。</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int add(int a, int b){
+    int c = a + b;
+    return c;
+}
+
+int main(){
+    int a = 10, b = 20;
+    int sum = add(a, b);
+    printf(&quot;sum = %d&quot;, sum);
+    return 0;
+}
+</code></pre>
+<p>默认情况下，程序会瞬间从开头执行到结尾，除非中途出现错误（称为“运行时错误”，比如内存读取失败）。要想让程序暂停执行，就需要设置一个断点。</p>
+<p>所谓<strong>断点</strong>，可以简单地理解成障碍物，汽车遇到障碍物不能通行，程序遇到断点就会暂停执行。Dev-C++ 给程序设置断点的方法很简单，想在哪一行代码处暂停执行，直接单击代码所在行的行号即可。例如：</p>
+<p><img alt="lab0-1" src="../img/lab0-1.gif" /></p>
+<p>如上图所示，我们成功地在第 7 行代码处添加了一个断点。</p>
+<blockquote>
+<p><strong>【注意】</strong>以正常方式点击“编译运行”按钮（快捷键是 F9）运行程序，断点是不会生效的，只有点击“调试”按钮（快捷键是 F8）运行程序时才有效。</p>
+</blockquote>
+<p><img alt="lab0-2" src="../img/lab0-2.gif" /></p>
+<blockquote>
+<p><strong>【注意】</strong>只有在“Debug”模式下才能使用调试功能，如上图所示，本节选用的是“TDM-GCC 4.9.2 64-bit Debug”模式。</p>
+</blockquote>
+<p>点击“调试”按钮，或者按下快捷键“F8”，程序开始执行，直到第 7 行代码处（当前行代码尚未运行）暂停，如下所示：</p>
+<p><img alt="lab0-3" src="../img/lab0-3.gif" /></p>
+<p>当程序暂时执行时，借助调试窗口中的按钮可以查看某些变量的值，还可以控制编译器继续往下执行程序。整个调试窗口中，常用的按钮以及含义分别是：</p>
+<ul>
+<li>添加查看：查看某个变量的值，还可以看到值的变化情况；</li>
+<li>下一步：控制编译器向下执行一行语句；</li>
+<li>单步进入：功能和“下一步”按钮类似，不同之处在于，当程序中调用某个自定义的函数时，此按钮可以进入到函数内部，继续调试函数内部的代码，而 "下一步" 按钮不会；</li>
+<li>跳过：继续执行程序，遇到下一个断点暂停执行；</li>
+<li>停止执行：停止调试程序。</li>
+</ul>
+<p>举个例子，点击“添加查看”按钮监视变量 sum 值的变化情况，添加之后如下图所示：</p>
+<p><img alt="lab0-4" src="../img/lab0-4.gif" /></p>
+<p>初始状态下，变量 sum 的值为 0。点击“下一步”，执行第 7 行代码，箭头光标指向第 8 行，变量 sum 的值仍为 0。再点击“下一步”，执行第 8 行代码，箭头光标指向第 9 行，变量 sum 的值变为 30。</p>
+<blockquote>
+<p>当箭头光标指向第 8 行代码时，点击“单步进入”按钮，箭头光标会进入 add() 函数并指向第 3 行代码，感兴趣的读者可自行尝试。</p>
+</blockquote>
+<p>调试过程中，Dev-C++ 支持同时监控多个变量，还支持在程序中设置多个断点，如下图所示：</p>
+<p><img alt="lab0-5" src="../img/lab0-5.gif" /></p>
+<p>以上就是我们所要介绍的调试程序的内容，最后我们提醒大家，对于修改后的程序，调试程序之前一定要先编译程序！</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
