@@ -62,6 +62,8 @@ output_file.exe  # 执行程序
 
 #### **2. [Dev-C++](./assets/devcpp-5.1.1.0_64bit_setup.exe)**
 
+注意：本版本实测会发生程序崩溃现象，请移步下方 RedPanda。
+
 安装即可，可以按照自己的需求更改安装位置，如：`C:/Dev` 或 `D:/App` 等。
 
 
