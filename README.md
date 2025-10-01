@@ -18,7 +18,7 @@ Made by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 cd Code2025
 python -m venv .venv  # 创建虚拟环境
 .venv/Scripts/Activate.ps1  # 激活虚拟环境
-pip install mkdocs-material  # 使用 pip 安装 mkdocs-material 及其依赖包 mkdocs 等
+pip install mkdocs-material mkdocs-glightbox  # 使用 pip 安装 mkdocs-material 及其依赖包
 ```
 
 

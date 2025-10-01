@@ -9,3 +9,12 @@ theme:
 nav:
   - Home: index.md
   - Lab0: lab0.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - glightbox:
+       touchNavigation: true
