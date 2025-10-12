@@ -63,7 +63,7 @@ for (init; cond; update) {
 
 我们建议所有的 `if-else` 语句都使用大括号，这个习惯可以让你规避很多 bug。
 
-```
+```c
 if (cond) {
 	stmt;
 } else {
@@ -73,7 +73,7 @@ if (cond) {
 
 #### 语句块
 
-```
+```c
 int main(void) {
 	{
 		blockstmt;
