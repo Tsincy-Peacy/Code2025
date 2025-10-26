@@ -26,13 +26,15 @@
 
 - [教材&实验指导书勘误(2025.01).xlsx](./assets/教材&实验指导书勘误(2025.01).xlsx)
 - [RedPanda](./assets/RedPanda.C++.3.2.win64.MinGW64_11.4.Setup.exe)
--  [7-zip](assets\7z2409-x64.exe)
--  [MinGW64](assets\x86_64-15.2.0-release-mcf-seh-ucrt-rt_v13-rev0.7z)
+- [7-zip](assets\7z2409-x64.exe)
+- [MinGW64](assets\x86_64-15.2.0-release-mcf-seh-ucrt-rt_v13-rev0.7z)
 
 
 
 ### 课件
 
--  [第1章 预备知识.ppt](sliders\第1章 预备知识.ppt)
--  [第2章 C语言概述.pptx](sliders\第2章 C语言概述.pptx)
--  [第3章 结构化程序设计—数据与运算.pptx](sliders\第3章 结构化程序设计—数据与运算.pptx)
+- [第1章 预备知识.ppt](sliders\第1章 预备知识.ppt)
+- [第2章 C语言概述.pptx](sliders\第2章 C语言概述.pptx)
+- [第3章 结构化程序设计—数据与运算.pptx](sliders\第3章 结构化程序设计—数据与运算.pptx)
+- [第3章 结构化程序设计—基本结构.pptx](sliders\第3章 结构化程序设计—基本结构.pptx)
+- [第3章 结构化程序设计—数组与批量数据处理.ppt](sliders\第3章 结构化程序设计—数组与批量数据处理.ppt)

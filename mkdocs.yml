@@ -8,8 +8,12 @@ theme:
 
 nav:
   - Home: index.md
-  - Lab0: lab0.md
-  - Lab1: lab1.md
+  - Lab0:
+    - Guidance: lab0/guidance.md
+    - Solution: lab0/solution.md
+  - Lab1:
+    - Guidance: lab1/guidance.md
+    - Solution: lab1/solution.md
 
 markdown_extensions:
   - attr_list
