@@ -222,6 +222,18 @@ D. 预处理命令不是 C 语言本身的组成部分
 
 Anwser：A、B、D
 
+16.有数组定义和函数 fun 调用语句int a[3][4]; fun(a);，则在函数 fun 定义时，对形参 array 的错误定义方式为？
+
+A. fun(int array[][4])
+
+B. fun(int array[3][4])
+
+C. fun(int **array)
+
+D. fun(int (*array)[4])
+
+Anwser：C
+
 ## 填空题
 
 1.定义 int a=0, b=0, c=0; 语句 c = 2>1 ? (a=1) : (b=2); 执行后，表达式 a+b+c 的值是？
