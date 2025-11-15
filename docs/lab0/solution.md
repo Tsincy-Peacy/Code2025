@@ -1,6 +1,6 @@
-# **Lab 0：参考答案**
+# Lab 0：参考答案
 
-## **To Upper**
+## To Upper
 
 ```c
 #include <stdio.h>

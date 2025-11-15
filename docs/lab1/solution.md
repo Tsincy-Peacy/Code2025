@@ -1,6 +1,6 @@
-# **实验 1：参考答案**
+# 实验 1：参考答案
 
-## **Prime Judge and Count**
+## Prime Judge and Count
 
 时间复杂度 $O(N\sqrt{N})$
 
@@ -56,7 +56,7 @@ int main() {
 }
 ```
 
-## **Convert T**
+## Convert T
 
 ```c
 #include <stdio.h>
