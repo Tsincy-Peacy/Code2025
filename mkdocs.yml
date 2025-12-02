@@ -22,6 +22,7 @@ nav:
     - Solution: lab4/solution.md
   - Lectures:
     - Lecture 1: lectures/lecture1 - 张逸安.md
+    - Lecture 2: lectures/lecture2 - 张逸安.md
 
 markdown_extensions:
   - attr_list
